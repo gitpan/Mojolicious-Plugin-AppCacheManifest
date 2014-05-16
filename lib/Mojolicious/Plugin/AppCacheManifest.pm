@@ -2,7 +2,7 @@ package Mojolicious::Plugin::AppCacheManifest;
 
 use Mojo::Base qw( Mojolicious::Plugin );
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 our %HEADERS = map +( $_, undef ), qw( CACHE FALLBACK NETWORK SETTINGS );
 our %CACHE;
 
@@ -209,8 +209,8 @@ Mojolicious::Plugin::AppCacheManifest - Offline web application manifest support
 
 =head1 DESCRIPTION
 
-This plugin manages manifest delivery for L<Offline Web applications|
-http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html>.
+This plugin manages manifest delivery for
+L<Offline Web applications|http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html>.
 It read manifests, checks modification of contained files that exist in static
 directories, and returns a clean manifest with only one comment containing a
 timestamp to allow for cache invalidation on changes.
@@ -248,8 +248,8 @@ Accessor for L</timeout>, see above.
 
 =item *
 
-Specification for L<Offline Web applications|
-http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html>.
+Specification for
+L<Offline Web applications|http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html>.
 
 =item *
 
